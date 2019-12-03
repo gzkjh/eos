@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package cmd;
+
+// 测试
+message cmdTest1 {
+    int32 ii = 2;
+    string ss = 3;
+    // 通过内部枚举来记录更多信息
+    enum info {
+        option allow_alias = true; // 允许重复，这样方便复制粘贴
+        unknown = 0; // proto3要求第一个必须是0
+        proto_id = 1001;
+        aaa = 1;
+        bbb = 1;
+    }
+}
+
+// 测试
+message cmdTest2 {
+    int32 ii = 1;
+    string ss = 2;
+    enum info {
+        option allow_alias = true; // 允许重复，这样方便复制粘贴
+        unknown = 0;
+        proto_id = 1002;
+        bag = 1;
+        email = 0;
+    }
+}
+

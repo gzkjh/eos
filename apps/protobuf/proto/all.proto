@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "cmd.proto";
+import "msg.proto";
+
+// 协议路由数据
+message protoID {
+    int32 proto_id = 1;
+    bytes data = 2;
+}
+

@@ -1,0 +1,44 @@
+# 参数配置
+# +开头的是控制模拟器行为
+# -开头的是运行时参数
+# -extra之后的全是普通参数
+
+
+# 是否支持smp,可以选enable|auto|disable
+-smp enable
+
+# 设置短名字
+-sname rich_vm
+
+# 设置cookie，确保节点可以互联
+-setcookie rich_cookie_vm
+
+
+# 启动kernel的poll
++K true
+
+# 系统栈大小，默认16k，一般建议不要改
+#+a 16
+
+# 异步线程池数量，默认10
++A 30
+
+# 调度器数量，一般是自动设置为cpu核心总数，可以比总核心数少，大于总核心数无效果
+# +S 8
+
+# etsz表的最大数量
++e 5000
+
+# 最大线程数
++P 5000000
+
+# 最大端口数
++Q 50000
+
+
+# 如果文件是utf8编码，+fnu，如果是 ISO-latin-1编码，用+fnl
++fnu
+
+# 指定erlang进程堆内存大小
+#+hms 8192
+

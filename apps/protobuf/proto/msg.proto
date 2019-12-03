@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+package msg;
+
+// 测试
+message msgTest1 {
+    int32 ii = 1;
+    string ss = 2;
+}
+
+// 测试
+message msgTest2 {
+    int32 ii = 1;
+    string ss = 2;
+}

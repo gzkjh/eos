@@ -1,0 +1,3 @@
+-module(protobuf).
+
+-export([]).

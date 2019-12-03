@@ -1,0 +1,3 @@
+%% encoding: UTF-8
+{application,tlog}.
+{modules,[tlog_app,tlog_sup]}.
